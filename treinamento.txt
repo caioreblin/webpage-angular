@@ -1,0 +1,2 @@
+https://www.pluralsight.com/courses/angular-2-getting-started-update
+https://github.com/DeborahK/Angular-GettingStarted
