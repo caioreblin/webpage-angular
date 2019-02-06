@@ -15,8 +15,8 @@
             </div>
         </div>
         <div class='table-responsive'>
-            <table class='table'></table>
-                <!--*ngIf='products && products.lenght'-->
+            <table class='table'
+                *ngIf='products && products.length'>
                 <thead>
                     <tr>
                         <th>
@@ -34,7 +34,8 @@
                 <tbody>
                     <tr *ngFor='let product of products'>
                         <td>
-                            <img [src]='product.imageUrl'
+                            <img *ngIf='showImage' 
+                                [src]='product.imageUrl'
                                 [title]='product.productName'
                                 [style.width.px]='imageWidth'
                                 [style.margin.px]='imageMargin'
